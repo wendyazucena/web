@@ -1,0 +1,199 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+----
+
+#slideshow {
+  text-align: center;
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin-bottom: 400px;
+}
+ 
+.slide-wrapper {
+  width: 2912px;
+  animation: slide 18s ease infinite;
+    height: 510px;
+}
+ 
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+ 
+.slide:nth-child(1) { /*Elementos de una etiqueta dentro*/
+  background-color: cornflowerblue;
+    height: 510px;
+  width: 728px;
+    
+}
+ 
+.slide:nth-child(2) {
+  background-color: cornflowerblue;
+    height: 510px;
+  width: 728px;
+}
+ 
+.slide:nth-child(3) {
+  background-color: magenta;
+    height: 510px;
+  width: 728px;
+}
+ 
+.slide:nth-child(4) {
+  background-color: yellow;
+    height: 510px;
+  width: 728px;
+}
+ 
+@keyframes slide {
+  20% {margin-left: -950px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+
+---
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .header img {
+            height: 40px;
+            margin-left: 10px;
+        }
+        .nav-links {
+            display: flex;
+        }
+        .nav-links a {
+            color: cornflowerblue;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+        }
+        .nav-links a:hover {
+            background-color:cornflowerblue;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+        .content {
+            margin-top: 70px;
+            width: 100%;
+            text-align: center;
+        }
+        .sinopsis {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            background-color: #F4F4F4;
+            padding: 20px;
+        }
+        .sinopsis-text {
+            width: 70%;
+            font-size: 20px;
+            color: black;
+            margin: 30px;
+        }
+        .sinopsis-text img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        .sinopsis img {
+            width: 45%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        ul{
+            margin: 25px;
+        }
+
+        .productos, .galeria, .footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        .productos {
+            background-color:cornflowerblue;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            flex-wrap: wrap;
+            height:auto;
+        }
+        .productos h2 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+            margin: 10px;
+            color: black;
+        }
+        .productos div {
+            text-align: center;
+            flex-basis: 30%;
+        }
+        .productos img {
+            width: 100%;
+            max-width: 330px;
+            height: auto;
+            border-radius: 5px;
+            margin: 30px;
+        }
+        .galeria {
+            background-color: black;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, auto);
+            justify-items: center;
+            padding: 20px;
+        }
+        .galeria h2 {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+        .galeria img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #ffffff;
+            color: black;
+            display: flex; 
+            justify-content: space-between;
+            align-items: center; 
+            padding: 10px;
+            margin: 15px;
+        }
